@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(bg4.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	margin: 5% 0;
+	padding: 2% 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 10px 18px #000;
+}
+
+.box {
+	width: 300px;
+	height: 400px;
+	margin: 0 0 0 15%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 10px 18px #000;
+}
+
+.box .img {
+	width: 50%;
+	height: 140px;
+	margin: 23%;
+	background-image: url(belakang.png);
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+.box .name {
+	text-align: center;
+	color: #fff;
+}
+
+.paragraf {
+	position: absolute;
+	display: inline-block;
+	margin: 0 3%;
+}
+
+.paragraf h4 {
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+}
+
+.paragraf p {
+	color: #fff;
+	margin: 5% 0;
+	font-size: 20px;
+}
+
+.paragraf .contact {
+	color: #fff;
+	margin: 4% 0;
+}
+
+.paragraf .contact a {
+	text-decoration: none;
+	color: #fff;
+}
+
+@media (max-width: 760px) {
+	body {
+		width: 100%;
+		height: 150vh;
+	}
+
+	.container {
+		width: 100%;
+		height: 100%;
+		margin: 5% 0;
+		padding: 2% 0;
+	}
+
+	.box {
+		display: inline;
+	}
+
+	.box .img {
+		width: 50%;
+		height: 200px;
+		border-radius: 40%;
+	}
+
+	.paragraf {
+		margin: 5% 2%;
+		width: 330px;
+		height: 350px;
+		overflow: auto;
+		font-size: 15px;
+		margin: 15% 0;
+	}
+
+	.paragraf p {
+		color: rgb(255, 255, 255);
+		position: relative;
+		display: block;
+		text-align: center;
+	}
+
+	.paragraf .contact {
+		text-align: center;
+	}
+}
+
+@media (min-width: 760px) and (max-width:1024px) {
+	.paragraf {
+		margin: 5% 2%;
+		width: 330px;
+		height: 350px;
+		font-size: 15px;
+		overflow: auto;
+	}
+}
